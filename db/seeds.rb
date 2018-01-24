@@ -16,11 +16,13 @@ AdminUser.create(email: "admin@test.com",
 
 puts "1 Admin User created"
 
-100.times do |audit_log|
-	AuditLog.create!(user_id: @user.id, status: 0, start_date:(Date.today - 6.days))
-end
 
-puts "100 Audit Logs have been created"
+AuditLog.create!(user_id: @user.id, status: 0, start_date:(Date.today - 6.days))
+AuditLog.create!(user_id: @user.id, status: 0, start_date:(Date.today - 13.days))
+AuditLog.create!(user_id: @user.id, status: 0, start_date:(Date.today - 20.days))
+
+
+puts "3 Audit Logs have been created"
 
 100.times do |post|
 	Post.create!(date: Date.today, rationale: "#{post} ƒ∂ˆ˙ˆ¨˙˜∫ç∆∑∆å¬µ≤≥Ω˜≈çµ≤˚∆ƒ∫¬å∆∫œ∆∑´˙®ˆ¨œ∑´¥ø˙Ω¬˚∆ç˜∫¯Ω∫˜µ√≤ç∫¬˚∆˙åß∂˙ƒ˚¬∆œˆ∑´¨®©", user_id: @user.id, overtime_request: 2.5)
