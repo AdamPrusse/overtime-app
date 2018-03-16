@@ -20,8 +20,8 @@
 - x Need to update audit log status when an overtime status has been rejected
 - x Update buttons on employee homepage so they show on mobile
 - x Update buttons to include timespan
-- Update button sort order on employee homepage
-- Remove unnecessary nav bar buttons for managers
+- x Update button sort order on employee homepage
+- x Remove unnecessary nav bar buttons for managers
 - admin dashboard bug
 - Implement Honey badger error reporting
 - Implement new relic for keeping the site alive
